@@ -1,0 +1,39 @@
+{
+  "name": "@helaili/my-typescript-module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "type": "module",
+  "author": "helaili@github.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helaili/my-typescript-module"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "scripts": {
+    "start": "npx ts-node src/index.ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "codegen": "graphql-codegen-esm --config codegen.ts"
+  },
+  "keywords": [],
+  "dependencies": {
+    "@apollo/client": "^3.8.10",
+    "cross-fetch": "^4.0.0",
+    "graphql": "^16.8.1"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "5.0.0",
+    "@graphql-codegen/client-preset": "^4.1.0",
+    "@graphql-codegen/typescript": "4.0.1",
+    "@graphql-codegen/typescript-document-nodes": "4.0.1",
+    "@graphql-codegen/typescript-operations": "^4.0.1",
+    "@graphql-codegen/typescript-resolvers": "4.0.1",
+    "@octokit/graphql-schema": "^14.50.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
