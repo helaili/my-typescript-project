@@ -1,8 +1,9 @@
 {
   "name": "@helaili/my-typescript-module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
   "author": "helaili@github.com",
   "license": "MIT",
