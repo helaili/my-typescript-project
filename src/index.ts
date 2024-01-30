@@ -11,7 +11,9 @@ async function main() {
   const api = new GitHubAPI(token);
   const orgId = await api.getOrgId('github');
   console.log(`Organization ID: ${orgId}`);
-  
+
 }
+
+export { GitHubAPI }
 
 main().catch(console.error);
